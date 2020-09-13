@@ -10,6 +10,7 @@ body
 {
     width: 100%;
     overflow-x: hidden;
+    background-color: #F5F5F5;
 }
 .navbar
 {
@@ -18,13 +19,18 @@ body
     top: 0;
     left: 0;
     z-index: 10000;
+    padding-left: 10px;
+    padding-right: 10px;
+    
 }
 .head
 {
     height: 100vh;
     width: 100%;
     background: #393E46;
+    /* overflow-x: hidden; */
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    z-index: 100;
 }
 
 .navbar .navbar-brand
@@ -64,8 +70,9 @@ body
 }
 .body
 {
+    overflow-x: hidden;
+    width: 100%;
     padding-bottom: 0px;
-    background-color: #F5F5F5;
 }
 .card-deck
 {
@@ -513,6 +520,10 @@ body
         height: 32px;
         border-radius: 55px;
         font-size: 16px;
+    }
+    .card-deck
+    {
+        margin-top: -80px;
     }
     .card-deck .card-img
     {
