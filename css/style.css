@@ -326,7 +326,7 @@ body
 }
 .blogs .blg-cards .blg-card
 {
-    margin: 0 auto;
+    margin: 0 auto!important;
     border-radius: 20px!important;
 }
 .blogs .blg-cards .blg-card .card-body
@@ -686,7 +686,7 @@ body
     }
     .blogs .blg-cards .blg-card
     {
-        margin: 10px 0;
+        margin: 10px auto;
     }
     .blogs .blg-cards .blg-card .card-body .card-head
     {
