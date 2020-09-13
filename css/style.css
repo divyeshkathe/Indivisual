@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+.navbar
+{
+    width: 100%;
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+.head
+{
+    height: 100vh;
+    width: 100%;
+    background: #393E46;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.navbar .navbar-brand
+{
+    color: #05A8EC!important;
+    font-weight: bold;
+}
+.head-wrap
+{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head-wrap .head-title
+{
+    margin-top: -100px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 46px;
+    letter-spacing: 1px;
+}
+
+.head-wrap #learn
+{
+    width: 180px;
+    height: 44px;
+    border-radius: 55px;
+    background: #05A8EC;
+    box-shadow: 0px 16px 64px rgba(5, 168, 236, 0.3);
+    border: none;
+    color: #ffffff;
+}
+.body
+{
+    padding-bottom: 0px;
+    background-color: #F5F5F5;
+}
+.card-deck
+{
+    margin-top: -120px;
+}
+.card-deck .card
+{
+    background-color: #F5F5F5!important;
+    border: none;
+    box-shadow: 0px 30px 120px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+}
+.card-deck .card-img
+{
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-deck .card-img .card-circle
+{
+    width: 140px;
+    height: 140px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-deck .card-body .card-title
+{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #222831;
+}
+.card-deck .card-body .card-text
+{
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #393E46;
+}
+
+.meetings,.business
+{
+    margin: 80px 0;
+    padding: 50px 120px!important;
+}
+.meetings .m-left img,.business .b-right img
+{
+    width: 550px;
+}
+.business .b-right img
+{
+    margin-top: -80px;
+}
+.meetings .m-right
+{
+    padding-left: 150px;
+    padding-top: 100px;
+}
+.business .b-left
+{
+    
+}
+.meetings .m-right .m-right-title h3,.business .b-left .b-left-title h3
+{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    color: #222831;
+}
+.meetings .m-right .m-right-text p,.business .b-left .b-left-text p
+{
+    font-size: 24px;
+    color: #393E46;
+}
+.work
+{
+    width: 85%;
+    margin: 0 auto;
+    background-color: #05A8EC;
+    box-shadow: 0px 16px 64px rgba(5, 168, 236, 0.3);
+    border-radius: 20px;
+    padding: 50px 0!important;
+    text-align: center;
+}
+.work .w-title h3,.blogs .blg-title h3,.contact .con-title h3
+{
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+.blogs .blg-title h3
+{
+    color: #222831;
+}
+.work .w-text p,.blogs .blg-text p,.contact .con-text p
+{
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 60%;
+    margin: 0 auto;
+}
+.blogs .blg-text p
+{
+    color: #222831;
+}
+.work .w-cards
+{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.work .w-cards .w-card
+{
+    margin: 0 20px;
+    width: 140px;
+    height: 140px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+    padding-top: 10px;
+}
+.work .w-cards .w-card .icon
+{
+    font-size: 50px;
+    color: #05A8EC;
+}
+.work .w-cards .w-card p
+{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 31px;
+    color: #222831;
+}
+.testimonials
+{
+    /* background-color: #05A8EC; */
+    margin: 100px 0;
+}
+.testimonials .t-title h3
+{
+    position: relative;
+    font-weight: 600;
+    font-size: 52px;
+    text-align: center;
+    color: #222831;
+}   
+.testimonials .t-title h3::before
+{
+    content: '';
+    width: 150px;
+    height: 5px;
+    background-color: #05A8EC;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.testimonials .t-car .t-card-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 200px 0;
+}
+.testimonials .carousel-item .t-card-img>div
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #222831;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.testimonials .carousel-item .t-card-img>div img
+{
+    width: 150px!important;
+    height: 150px;
+}
+.t-car .t-card-img p
+{
+    font-size: 20px;
+    text-align: center;
+    color: #393E46;
+}
+
+.testimonials .carousel-caption h5
+{
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}
+.testimonials .carousel-caption p
+{
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #05A8EC;
+}
+.testimonials .t-control
+{
+    color: #05A8EC!important;
+    font-size: 35px;
+}
+.testimonials .carousel-indicators li
+{
+    background-color: #05A8EC!important;
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%!important;
+}
+.counter
+{
+    background-color: #222831;
+    padding: 40px 100px!important;
+}
+.counter .c-card
+{
+    text-align: center;
+}
+.counter .c-card p
+{
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: -2px;
+}
+.blogs
+{
+    margin: 80px 0;
+}
+.blogs .blg-cards
+{
+    /* padding: 0 auto; */
+    width: 80%;
+    margin : 60px auto 0;
+}
+.blogs .blg-cards .blg-card
+{
+    margin: 0 auto;
+    border-radius: 20px!important;
+}
+.blogs .blg-cards .blg-card .card-body
+{
+    background-color: #05A8EC;
+    border-radius: 0 0 5px 5px;
+    color: #ffffff;
+}
+.blogs .blg-cards .blg-card .card-body .card-head
+{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.blogs .blg-cards .blg-card .card-body .card-text
+{
+    font-size: 16px;
+}
+.contact
+{
+    background-color: #05A8EC;
+    padding: 50px 0;
+    margin: 140px 0 0px;
+}
+.contact .con-container
+{
+    padding-left: 80px!important;
+    padding-right: 80px!important;
+}
+.contact .row
+{
+    width: 85%;
+    margin: 0 auto;
+}
+.contact .con-input
+{
+    padding: 40px 0;
+}
+.contact .con-input input
+{
+    width: 380px;
+    height: 50px;
+    display: block;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-size: 16px;
+    padding-left: 14px;
+    color: #AEAEAE;
+}
+.contact .con-input2 input
+{
+    margin-left: auto;
+}
+.contact .con-msg
+{
+    width: 100%;
+}
+.contact .con-msg textarea
+{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding-left: 12px;
+    padding-top: 6px;
+    font-size: 16px;
+    color: #AEAEAE;
+}
+.contact .con-send
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.contact .con-send button
+{
+    background: #FFFFFF;
+    box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.35);
+    border-radius: 55px;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #05A8EC;
+    font-weight: 500;
+    outline: none;
+    transition: .3s;
+}
+.contact .con-send button:hover
+{
+    background-color: #393E46;
+    color: #ffffff;
+}
+.social
+{
+    background-color: #393E46;
+    padding: 40px 0;
+}
+.social .social-card
+{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    color: #FFFFFF;
+}
+.social .social-card p.s-title
+{
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.social .social-card p.s-text
+{
+    margin: 0;
+    font-size: 16px;
+}
+.social .social-card p.brand
+{
+    color: #05A8EC;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 800;
+}
+.social .social-card .s-add
+{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.social .social-card .s-add .s-icons
+{
+    margin-right: 12px;
+    font-size: 22px;
+}
+.social .social-card .sm-icons
+{
+    font-size: 34px;
+    cursor: pointer;
+}
+.social .social-card .sm-icons .sm-icon
+{
+    margin-right: 10px;
+    transition: .3s;
+}
+.social .social-card .sm-icons .sm-icon:hover
+{
+    transform: scale(1.2);
+}
+.social .social-card .sm-icons .sm-icon:nth-child(1):hover
+{
+    color: #3B5998;
+}
+.social .social-card .sm-icons .sm-icon:nth-child(2):hover
+{
+    color: #C13584;
+}
+.social .social-card .sm-icons .sm-icon:nth-child(3):hover
+{
+    color: #25D366;
+}
+.social .social-card .sm-icons .sm-icon:nth-child(4):hover
+{
+    color: #0077B5;
+}
+
+
+@media only screen and (max-width:768px)
+{
+    .head
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        height: 80vh;
+    }
+    .head-wrap .head-title
+    {
+        margin-top: -150px;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+    .head-wrap #learn
+    {
+        width: 130px;
+        height: 32px;
+        border-radius: 55px;
+        font-size: 16px;
+    }
+    .card-deck .card-img
+    {
+        height: 140px;
+    }
+    .card-deck .card-img .card-circle
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .card-deck .card-img .card-circle svg
+    {
+        width: 50px;
+        height: 50px;
+    }
+    .card-deck .card-body .card-title
+    {
+        font-size: 18px;
+    }
+    .card-deck .card-body .card-text
+    {
+        font-size: 14px;
+    }
+
+    .meetings,.business
+    {
+        margin: 0px 0;
+        padding: 20px 0px!important;
+    }
+    .meetings .row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .meetings .m-left,.business .b-right
+    {
+        text-align: center;
+    }
+    
+    .meetings .m-left img,.business .b-right img
+    {
+        width: 300px;
+    }
+    .business .b-right img
+    {
+        margin-top: -40px;
+    }
+    .meetings .m-right,.business .b-left
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0;
+        text-align: center;
+    }
+    .meetings .m-right .m-right-title h3,.business .b-left .b-left-title h3
+    {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222831;
+    }
+    .meetings .m-right .m-right-text p,.business .b-left .b-left-text p
+    {
+        font-size: 18px;
+        color: #393E46;
+    }
+
+    .work
+    {
+        margin-top: 30px;
+        width: 95%;
+        border-radius: 10px;
+    }
+    .work .w-title h3,.blogs .blg-title h3,.contact .con-title h3
+    {
+        font-size: 32px;
+        letter-spacing: 1.5px;
+    }
+    .work .w-text p,.blogs .blg-text p,.contact .con-text p
+    {
+        font-size: 18px;
+        text-align: center;
+        width: 90%;
+    }
+    .work .w-cards
+    {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .work .w-cards .w-card
+    {
+        margin: 10px 0px;
+        width: 240px;
+        height: 140px;
+        border-radius: 8px;
+    }
+    .work .w-cards .w-card .icon
+    {
+        font-size: 50px;
+    }
+
+    .testimonials
+    {
+        /* background-color: #05A8EC; */
+        margin: 100px 0;
+    }
+    .testimonials .t-title h3
+    {
+        position: relative;
+        font-weight: 600;
+        font-size: 22px;
+        text-align: center;
+        color: #222831;
+    }   
+    .testimonials .t-title h3::before
+    {
+        content: '';
+        width: 100px;
+        height: 3px;
+        bottom: -35%;
+    }
+    .testimonials .t-car .t-card-img
+    {
+        padding: 130px 0;
+    }
+    .testimonials .carousel-item .t-card-img>div
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .testimonials .carousel-item .t-card-img>div img
+    {
+        width: 100px!important;
+        height: 100px;
+    }
+    .t-car .t-card-img p
+    {
+        font-size: 16px;
+        text-align: center;
+        color: #393E46;
+    }
+
+    .testimonials .carousel-caption h5
+    {
+        font-size: 14px;
+    }
+    .testimonials .carousel-caption p
+    {
+        font-size: 14px;
+        text-align: center;
+    }
+    .testimonials .t-control
+    {   
+        font-size: 25px;
+    }
+    .counter .c-card
+    {
+        margin: 10px 0;
+    }
+    .counter .c-card p
+    {
+        font-size: 24px;
+        margin-bottom: -5px;
+    }
+    .blogs .blg-cards
+    {
+        /* padding: 0 auto; */
+        width: 90%;
+    }
+    .blogs .blg-cards .blg-card
+    {
+        margin: 10px 0;
+    }
+    .blogs .blg-cards .blg-card .card-body .card-head
+    {
+        font-size: 18px;
+    }
+    .blogs .blg-cards .blg-card .card-body .card-text
+    {
+        font-size: 14px;
+    }
+    .contact .con-container
+    {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+    .contact .row
+    {
+        width: 100%;
+        margin: 0 auto;
+        margin: 15px 0;
+    }
+    .contact .con-input
+    {
+        padding: 0;
+    }
+    .contact .con-input input
+    {
+        width: 280px;
+        height: 40px;
+        padding-left: 10px;
+        margin: 15px auto;
+        font-size: 14px;
+    }
+    .contact .con-input2 input
+    {
+        /* margin-left: 0; */
+        margin: 0 auto;
+    }
+    .contact .con-msg
+    {
+        width: 100%;
+    }
+    .contact .con-msg textarea
+    {
+        display: block;
+        width: 280px;
+        padding-left: 10px;
+        font-size: 14px;
+        color: #AEAEAE;
+        margin: 0 auto;
+    }
+    .contact .con-send button
+    {
+        border-radius: 55px;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .social .social-card
+    {
+        padding: 15px 30px;
+        color: #FFFFFF;
+    }
+    .social .social-card p.s-title
+    {
+        font-size: 18px;
+    }
+    .social .social-card p.s-text
+    {
+        font-size: 14px;
+    }
+    .social .social-card p.brand
+    {
+        font-size: 24px;
+        font-weight: 800;
+    }
+    .social .social-card .s-add
+    {
+        margin: 10px 0;
+    }
+    .social .social-card .s-add .s-icons
+    {
+        font-size: 18px;
+    }
+    .social .social-card .sm-icons
+    {
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+}
