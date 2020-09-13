@@ -697,7 +697,7 @@ body
     }
     .blogs .blg-cards .blg-card
     {
-        margin: 10px auto;
+        margin: 10px auto!important;
     }
     .blogs .blg-cards .blg-card .card-body .card-head
     {
