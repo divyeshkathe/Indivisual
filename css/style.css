@@ -30,7 +30,7 @@ body
     background: #393E46;
     /* overflow-x: hidden; */
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    z-index: 100;
+    z-index: 10000;
 }
 
 .navbar .navbar-brand
@@ -40,7 +40,9 @@ body
 }
 .head-wrap
 {
+    position: relative;
     width: 100%;
+    overflow: hidden;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -67,6 +69,27 @@ body
     box-shadow: 0px 16px 64px rgba(5, 168, 236, 0.3);
     border: none;
     color: #ffffff;
+}
+
+.head-wrap .a-square
+{
+    position: absolute;
+    bottom: -10%;
+    /* width: 50px;
+    height: 50px; */
+    background-color: rgba(255,255,255,0.1);
+    z-index: -10;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0) rotate(0deg);
+    }
+    100%
+    {
+        transform: translateY(-93vh) rotate(360deg);
+    }
 }
 .body
 {
